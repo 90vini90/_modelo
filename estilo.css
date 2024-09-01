@@ -1,0 +1,132 @@
+/* Reseta o estilo padrão do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #8787ec;
+    font-family: Arial, sans-serif;
+    font-size: 2.5vw; /* Fonte mais contida */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    line-height: 1.5;
+}
+
+header {
+    color: white;
+    text-align: center;
+    padding: 4vw; /* Padding ajustado */
+}
+
+section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 4vw; /* Padding ajustado */
+    width: 90%;
+    max-width: 500px;
+    margin: 5vw auto;
+    box-shadow: 5px 5px 10px #0000006b;
+    text-align: center;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+    margin-top: auto;
+    padding: 2vw; /* Padding ajustado */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#horaInput {
+    margin-bottom: 5vw; /* Padding ajustado */
+}
+
+#hora {
+    width: 30vw; /* Ajuste para telas muito pequenas */
+    padding: 1.5vw; /* Padding ajustado */
+    margin-right: 2vw; /* Padding ajustado */
+    font-size: 2.5vw; /* Fonte menor */
+}
+
+/* Estilo do botão */
+button {
+    padding: 1.5vw 4vw; /* Padding ajustado */
+    font-size: 2.5vw; /* Fonte menor */
+    background-color: #4c4caf; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    border: none; /* Remove borda padrão */
+    border-radius: 25px; /* Bordas arredondadas */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Sombra para profundidade */
+    cursor: pointer; /* Cursor pointer para indicar que é clicável */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transições suaves */
+}
+
+button:hover {
+    background-color: #3737a6; /* Cor de fundo ao passar o mouse */
+    transform: translateY(-2px); /* Leve movimento para cima ao passar o mouse */
+}
+
+button:active {
+    transform: translateY(2px); /* Leve movimento para baixo ao clicar */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Ajuste da sombra ao clicar */
+}
+
+/* Media query para telas menores que 768px */
+@media (max-width: 768px) {
+    body {
+        font-size: 3vw; /* Fonte menor */
+    }
+
+    section {
+        padding: 5vw; /* Padding ajustado */
+    }
+
+    header h1 {
+        font-size: 5vw; /* Fonte menor */
+    }
+}
+
+/* Media query para telas menores que 480px */
+@media (max-width: 480px) {
+    body {
+        font-size: 4vw; /* Fonte menor */
+    }
+
+    header h1 {
+        font-size: 6vw; /* Fonte menor */
+    }
+
+    #hora {
+        width: 50vw; /* Ajuste para smartphones muito pequenos */
+    }
+}
+
+/* Media query para telas menores que 320px */
+@media (max-width: 320px) {
+    body {
+        font-size: 4.5vw; /* Fonte menor */
+    }
+
+    header h1 {
+        font-size: 7vw; /* Fonte menor */
+    }
+
+    section {
+        padding: 6vw; /* Padding ajustado */
+    }
+
+    button {
+        padding: 3vw 5vw; /* Padding ajustado */
+    }
+}

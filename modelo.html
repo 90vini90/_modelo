@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora do dia!</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body id="body">
+    <header>
+        <h1>Hora do dia</h1>
+    </header>
+    <section>
+        <div id="horaInput">
+            <label for="hora">Digite a hora (formato 24h): </label>
+            <input type="number" id="hora" min="0" max="23" placeholder="???">
+            <button onclick="carregar()">Carregar</button>
+        </div>
+        <div id="msg"></div>
+        <div id="foto">
+            <img src="imagens/dia.png" id="imagem" alt="Imagem da hora do dia">
+        </div>
+    </section>
+    <footer>
+        <p>Marcus Vinícius</p>
+    </footer>
+
+    <script src="codigo.js"></script>
+</body>
+</html>
